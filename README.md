@@ -6,3 +6,4 @@ Marlin Ender 3 Pro Config версия 2.0.6 bugfix
 4. https://www.danbp.org/p/en/node/142
 5. https://www.danbp.org/p/en/node/143
 6. https://marlinfw.org/
+![Схема](https://github.com/XroMSPb/Marlin-Ender-3-Pro-Config/blob/master/bltouch.JPG?raw=true)
