@@ -1001,7 +1001,7 @@
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define PROBING_MARGIN 10
+#define PROBING_MARGIN 15
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 3000 //Customized DBP
@@ -1069,7 +1069,7 @@
 #if ENABLED(PROBING_HEATERS_OFF)
   //#define WAIT_FOR_BED_HEATER     // Wait for bed to heat back up between probes (to improve accuracy)
 #endif
-//#define PROBING_FANS_OFF          // Turn fans off when probing
+#define PROBING_FANS_OFF          // Turn fans off when probing
 //#define PROBING_STEPPERS_OFF      // Turn steppers off (unless needed to hold position) when probing
 //#define DELAY_BEFORE_PROBING 200  // (ms) To prevent vibrations from triggering piezo sensors
 
@@ -1302,7 +1302,14 @@
     // Beyond the probed grid, continue the implied tilt?
     // Default is to maintain the height of the nearest edge.
     #define EXTRAPOLATE_BEYOND_GRID
+//PROBE_BED_POSITION my
+    //#define LEFT_PROBE_BED_POSITION 15
 
+    //#define RIGHT_PROBE_BED_POSITION 175
+
+    //#define FRONT_PROBE_BED_POSITION 15
+
+    //#define BACK_PROBE_BED_POSITION 217
     //
     // Experimental Subdivision of the grid by Catmull-Rom method.
     // Synthesizes intermediate points to produce a more detailed mesh.
